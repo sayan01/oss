@@ -1,0 +1,146 @@
+$ Open Source Workshop
+Sayan Ghosh
+
+# What is Open Source?
+- The source code is available online.
+- Not same as FOSS -> Free and Open Source.
+- Free means Freedom, not the price.
+
+# Why Contribute to OSS?
+!images/job-exp.jpg
+
+# What is Git and why should I care?
+- Version Control Software
+- Better than creating copies of the file.
+- Remembers only the difference between versions.
+
+# What life without VCS looks like
+!images/final.jpg
+
+# So how do i use git?
+- git init -> initialize repository
+- git add -> add some files to staging
+- git commit -> commit those changes in staging
+- git push -> push changes to remote
+- git pull -> pull remote changes
+- git clone -> clone a remote project locally
+
+# Wait what is a remote?
+!images/git-remote.png
+
+# Wait what is a remote?
+- Github is an example of remote
+- others can be gitlab, bitbucket, etc
+
+# Why Github?
+- Allows collaboration
+- Easy merging
+- Issues, Milestones, and more
+
+# How to use Github?
+- Create an account
+- Login
+- Add your SSH keys
+
+# Whats an SSH key now?
+- It is like your identity
+- Authenticates your git activity in github
+
+# Why we need it?
+!images/encrypt.png
+
+# Why we need it?
+- To ensure that the data is not tampered with.
+- No pesky passwords!
+
+# How to create SSH Keys?
+- `ssh-keygen`
+- If we want an RSA key, we can use `ssh-keygen -t rsa`
+(use Linux or WSL or Git Bash)
+
+# Okay, I have the key. Now what?
+- Copy the key to your clipboard
+- Go to Github -> Settings -> SSH and GPG keys
+- Add the key
+
+# Pushing, Pulling, Cloning
+- Sending changes to remote -> `git push`
+- Getting changes from remote -> `git pull`
+- Copying a remote repository -> `git clone`
+
+# What is origin?
+- Origin is the default name for the remote repository
+- It can be changed to any name
+
+# What is master?
+- Master is the default branch
+- It can be changed to any name
+- Github uses main as the default branch
+
+# What are branches?
+- Branches are like parallel universes
+- They allow you to work on different features
+- They can be merged back to the master branch
+
+# Branches
+!images/branch.png
+
+# Do I need so many branches?
+- It is bad practice to work on the master branch
+- Causes conflicts
+- Better to work on a separate branch
+
+# How to create a branch?
+- `git checkout -b branchname`
+
+# How to switch branches?
+- `git checkout branchname`
+
+# How to merge branches?
+- `git checkout master` (switch to master)
+- `git merge branchname` (merge branchname to master)
+
+# How to work on someone else's project?
+- If you are collaborator, you can push directly
+- If not, you can fork the project
+
+# What is forking?
+- Forking is like copying a project
+- You own the forked project, not the original
+- You can make any changes to the forked project
+- You can request the original project to merge your changes
+
+# Forking and PR
+!images/fork.png
+
+# What is a PR?
+- After you have made changes to the forked project
+- You can request the original project to merge your changes
+- This is called a Pull Request
+
+# Should I create PR in my own project?
+- Yes, it is a good practice to create PR in your own project
+- You should create new branches for new features
+- You should merge the PR after review
+
+# Issues
+- Issues are like tasks or bug reports
+- They can be assigned to people
+- They can be closed using PRs
+- You can self-assign issues
+
+# How to close issues?
+- You can close issues using PRs
+- Mention the issue number in the PR description
+- Add the word 'fixes' or 'closes'
+
+# How to contribute to a project?
+- README are good place to start
+- Do not get stuck at README
+- Read the contributing guidelines in the repository
+- Create your own project!
+
+# Powered by Present
+- This presentation is totally made using `present`
+- a FOSS tool for making presentations
+@github.com/sayan01/present sayan01/present
